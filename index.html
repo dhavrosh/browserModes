@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body></body>
+<script src="./scripts/base.js"></script>
+<script src="./scripts/browsers/chrome.js"></script>
+<script src="./scripts/browsers/edge.js"></script>
+<script src="./scripts/browsers/firefox.js"></script>
+<script src="./scripts/browsers/safari.js"></script>
+<script src="./scripts/set.js"></script>
+<script>
+    const browserSet = new BrowserSet();
+    browserSet.verify(() => alert('Do something in Public Mode'), () => alert('Do something in Private Mode'));
+</script>
+</html>
